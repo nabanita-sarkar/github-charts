@@ -59,6 +59,37 @@ function App() {
                 {data.created_at}
               </h3>
             </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-5">
+              <div className="bg-gray-800 rounded-md p-5">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-200">
+                  {data.public_repos}
+                </h3>
+                <h3 className="text-2xl font-bold text-gray-400">
+                  Public Repositories
+                </h3>
+              </div>
+              <div className="bg-gray-800 rounded-md p-5">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-200">
+                  {data.public_gists}
+                </h3>
+                <h3 className="text-2xl font-bold text-gray-400">
+                  Public Gists
+                </h3>
+              </div>
+              <div className="bg-gray-800 rounded-md p-5">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-200">
+                  {data.followers}
+                </h3>
+                <h3 className="text-2xl font-bold text-gray-400">Followers</h3>
+              </div>
+              <div className="bg-gray-800 rounded-md p-5">
+                <h3 className="text-2xl lg:text-3xl font-bold text-gray-200">
+                  {data.following}
+                </h3>
+                <h3 className="text-2xl font-bold text-gray-400">Following</h3>
+              </div>
+            </div>
           </div>
         ) : null}
       </div>
