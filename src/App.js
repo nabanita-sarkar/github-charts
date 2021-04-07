@@ -90,6 +90,32 @@ function App() {
                 <h3 className="text-2xl font-bold text-gray-400">Following</h3>
               </div>
             </div>
+            <h3 className="text-2xl lg:text-3xl font-bold text-purple-500 mt-10 mb-5">
+              All Repositories
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 py-5">
+              {repos.map((repo) => {
+                return (
+                  <div key={repo.id}>
+                    <div className="bg-gray-800 rounded-md p-5">
+                      <a
+                        className="text-1xl font-bold text-gray-300 hover:underline hover:underline-2"
+                        href={repo.html_url}
+                      >
+                        {repo.name}
+                      </a>
+                      <p className="text-gray-400">{repo.description}</p>
+                      <span className={repo.language}></span>
+                      <p className="text-gray-400">Language {repo.language}</p>
+                      <p className="text-gray-400">Forks {repo.forks_count}</p>
+                      <p className="text-gray-400">
+                        Issues {repo.open_issues_count}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         ) : null}
       </div>
