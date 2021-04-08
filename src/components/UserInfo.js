@@ -3,11 +3,9 @@ import { useEffect, useState } from "react";
 
 function UserInfo({ username }) {
   const [data, setData] = useState(null);
-  console.log(username);
 
-  const fetchUserData = async () => {
+  const fetchUserData = () => {
     api.get(`/users/${username}`).then((res) => {
-      console.log(res.data);
       setData(res.data);
     });
   };

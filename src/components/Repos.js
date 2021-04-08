@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 function Repos({ username }) {
   const [repos, setRepos] = useState(null);
 
-  const fetchRepos = async () => {
+  const fetchRepos = () => {
     api.get(`/users/${username}/repos`).then((res) => {
       setRepos(res.data);
     });

@@ -10,9 +10,6 @@ function App() {
     history.push({
       pathname: "/user",
       search: `?id=${username}`,
-      state: {
-        username: username,
-      },
     });
   };
   return (
