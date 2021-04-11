@@ -1,6 +1,6 @@
 import GhPolyglot from "gh-polyglot";
 import { useState, useEffect } from "react";
-import { Bar } from "react-chartjs-2";
+import { Doughnut } from "react-chartjs-2";
 
 function Chart({ username }) {
   const [langData, setLangData] = useState(null);
@@ -36,6 +36,7 @@ function Chart({ username }) {
       setChartData(chartPassData);
     }
   }, [langData]);
-  return <>{langData && chartData && <Bar data={chartData} />}</>;
+
+  return <>{langData && chartData && <Doughnut data={chartData} />}</>;
 }
 export default Chart;
