@@ -10,12 +10,12 @@ function Chart({ username }) {
     const ployglot = new GhPolyglot(username);
     ployglot.userStats((err, stats) => {
       if (err) {
-        // console.error("Error:", err);
+        console.error("Error:", err);
       }
-      // console.log(stats);
+      console.log(stats);
       setLangData(stats);
     });
-    // console.log(langData);
+    console.log(langData);
   }, []);
 
   useEffect(() => {

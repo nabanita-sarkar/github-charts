@@ -2,7 +2,6 @@
   "name": "github-charts",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://nabanita-sarkar.github.io/github-charts",
   "dependencies": {
     "@craco/craco": "^6.1.1",
     "@primer/octicons-react": "^13.0.0",
@@ -46,9 +45,8 @@
     ]
   },
   "devDependencies": {
-    "@tailwindcss/postcss7-compat": "^2.2.2",
+    "@tailwindcss/postcss7-compat": "^2.1.0",
     "autoprefixer": "^9.8.6",
-    "gh-pages": "^3.2.3",
     "postcss": "^7.0.35",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.1.0"
   }
