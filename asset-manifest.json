@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/github-charts/static/css/main.2f54b9fe.chunk.css",
+    "main.css": "/github-charts/static/css/main.3b18af57.chunk.css",
     "main.js": "/github-charts/static/js/main.8049953f.chunk.js",
     "main.js.map": "/github-charts/static/js/main.8049953f.chunk.js.map",
     "runtime-main.js": "/github-charts/static/js/runtime-main.589e004f.js",
@@ -10,13 +10,13 @@
     "static/js/3.fc35c5cf.chunk.js": "/github-charts/static/js/3.fc35c5cf.chunk.js",
     "static/js/3.fc35c5cf.chunk.js.map": "/github-charts/static/js/3.fc35c5cf.chunk.js.map",
     "index.html": "/github-charts/index.html",
-    "static/css/main.2f54b9fe.chunk.css.map": "/github-charts/static/css/main.2f54b9fe.chunk.css.map",
+    "static/css/main.3b18af57.chunk.css.map": "/github-charts/static/css/main.3b18af57.chunk.css.map",
     "static/js/2.834ded55.chunk.js.LICENSE.txt": "/github-charts/static/js/2.834ded55.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.589e004f.js",
     "static/js/2.834ded55.chunk.js",
-    "static/css/main.2f54b9fe.chunk.css",
+    "static/css/main.3b18af57.chunk.css",
     "static/js/main.8049953f.chunk.js"
   ]
 }
