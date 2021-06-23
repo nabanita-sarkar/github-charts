@@ -13,20 +13,18 @@ function User() {
   const [tab, setTab] = useState("user");
 
   return (
-    <>
-      <Navbar setTab={setTab} />
-      <h1>{username}</h1>
+    <body className="bg-gray-900">
+      <Navbar tab={tab} setTab={setTab} />
+      {/* <h1>{username}</h1> */}
       {tab === "user" ? (
-        // <UserInfo username={username} />
         <>
-          <p>User</p>
+          <UserInfo username={username} />
           <Chart username={username} />
         </>
       ) : (
-        // <Repos username={username} />
-        <p>Repo</p>
+        <Repos username={username} />
       )}
-    </>
+    </body>
   );
 }
 export default User;
