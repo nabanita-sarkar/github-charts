@@ -1,5 +1,7 @@
 # OctoHub
 
+<img src="./repo_image.png" alt="Repo Image" >
+
 ## Your Github Profile Reimagined ✨
 
 Visualize your Github info all in one place with intaractive charts.
