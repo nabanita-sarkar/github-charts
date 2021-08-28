@@ -37,6 +37,10 @@ function Chart({ username }) {
     }
   }, [langData]);
 
-  return <>{langData && chartData && <Doughnut data={chartData} />}</>;
+  return (
+    <div className="bg-gray-100">
+      {langData && chartData && <Doughnut data={chartData} />}
+    </div>
+  );
 }
 export default Chart;

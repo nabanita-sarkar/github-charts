@@ -20,7 +20,7 @@ function App() {
         </h1>
         <form onSubmit={fetchStats} className="text-center">
           <input
-            className="text-center focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none w-90 text-big text-gray-300 placeholder-gray-500 border border-gray-600 ring-2 ring-gray-600 rounded-md py-2 bg-gray-800"
+            className="w-3/5 text-center focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none w-90 text-big text-gray-300 placeholder-gray-500 border border-gray-600 ring-2 ring-gray-600 rounded-md py-2 bg-gray-800"
             placeholder=""
             value={username}
             onChange={(e) => setUsername(e.target.value)}

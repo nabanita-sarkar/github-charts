@@ -13,7 +13,7 @@ function User() {
   const [tab, setTab] = useState("user");
 
   return (
-    <body className="bg-gray-900">
+    <body className="bg-gray-900 h-screen">
       <Navbar tab={tab} setTab={setTab} />
       {tab === "user" ? (
         <>
