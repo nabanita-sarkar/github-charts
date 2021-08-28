@@ -15,7 +15,6 @@ function User() {
   return (
     <body className="bg-gray-900">
       <Navbar tab={tab} setTab={setTab} />
-      {/* <h1>{username}</h1> */}
       {tab === "user" ? (
         <>
           <UserInfo username={username} />

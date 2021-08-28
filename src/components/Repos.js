@@ -6,6 +6,7 @@ import {
 } from "@primer/octicons-react";
 import api from "../utils/api";
 import { useEffect, useState } from "react";
+import langColors from "../utils/langColors";
 
 function Repos({ username }) {
   const [repos, setRepos] = useState(null);
@@ -30,29 +31,39 @@ function Repos({ username }) {
         {repos.map((repo) => {
           return (
             <a key={repo.id} href={repo.html_url}>
-              <div className="bg-gray-800 rounded-md p-5 hover:transform scale-125">
-                <h1 className="text-xl font-bold text-gray-300 hover:underline hover:underline-2">
+              <div className="flex flex-col h-full bg-gray-800 rounded-md p-5 hover:transform scale-125">
+                <h1 className="break-words text-xl font-bold text-gray-300 hover:underline hover:underline-2">
                   <RepoIcon size={24} /> {repo.name}
                 </h1>
-                <p className="text-gray-400">{repo.description}</p>
-
-                <div className="flex mt-5 ">
-                  <span className="text-gray-400 flex justify-start">
-                    Language {repo.language}
-                  </span>
-                  <div className="ml-auto flex items-center align-middle ">
-                    <span className="text-gray-400 mr-2">
-                      <StarIcon className="text-base align-middle" />{" "}
-                      {repo.stargazers_count}
-                    </span>
-                    <span className="text-gray-400 mr-2">
-                      <RepoForkedIcon className="text-base" />{" "}
-                      {repo.forks_count}
-                    </span>
-                    <span className="text-gray-400">
-                      <IssueOpenedIcon className="text-base" />{" "}
-                      {repo.open_issues_count}
-                    </span>
+                <p className="text-gray-400 mb-5">{repo.description}</p>
+                <div className="flex items-end mt-auto">
+                  <div className="flex justify-start items-baseline gap-2">
+                    {repo.language && (
+                      <>
+                        <div
+                          style={{
+                            borderColor: `${langColors[repo.language]}`,
+                            // backgroundColor: `${langColors[repo.language]}`,
+                          }}
+                          className="h-3 w-3 border-2 rounded"
+                        ></div>
+                        <span className="text-gray-400 ">{repo.language}</span>
+                      </>
+                    )}
+                  </div>
+                  <div className="gap-2 text-gray-400 ml-auto flex flex-none items-center align-middle ">
+                    {/* <div className=" mr-2"> */}
+                    <StarIcon className="text-base align-middle -mr-1" />{" "}
+                    <span>{repo.stargazers_count}</span>
+                    {/* </div>
+                    <div className="text-gray-400 mr-2"> */}
+                    <RepoForkedIcon className="text-base -mr-1" />{" "}
+                    <span>{repo.forks_count}</span>
+                    {/* </div>
+                    <div className="text-gray-400"> */}
+                    <IssueOpenedIcon className="text-base -mr-1" />{" "}
+                    <span>{repo.open_issues_count}</span>
+                    {/* </div> */}
                   </div>
                 </div>
               </div>

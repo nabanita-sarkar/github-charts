@@ -1,7 +1,8 @@
 {
   "name": "github-charts",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://nabanita-sarkar.github.io/github-charts",
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "@primer/octicons-react": "^13.0.0",
