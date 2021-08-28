@@ -4,16 +4,16 @@ import "./index.css";
 import App from "./pages/App";
 import User from "./pages/User";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Switch>
         <Route path="/" exact component={App} />
         <Route path="/user" component={User} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById("root")
 );
