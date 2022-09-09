@@ -36,7 +36,7 @@ function User() {
       <Navbar tab={tab} setTab={setTab} />
       {tab === "user" ? (
         <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols2 sm:grid-cols-1">
-          <div>
+          <div className="flex flex-col gap-5 lg:p-24 md:p-10 p-5">
             <UserInfo username={username} />
             <Chart username={username} />
           </div>
