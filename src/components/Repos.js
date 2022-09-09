@@ -31,7 +31,7 @@ function Repos({ username }) {
         {repos.map((repo) => {
           return (
             <a key={repo.id} href={repo.html_url}>
-              <div className="flex flex-col h-full bg-gray-800 rounded-md p-5 hover:transform scale-125">
+              <div className="flex flex-col h-full bg-gray-800 rounded-md p-5 transition-transform hover:scale-105">
                 <h1 className="break-words text-xl font-bold text-gray-300 hover:underline hover:underline-2">
                   <RepoIcon size={24} /> {repo.name}
                 </h1>

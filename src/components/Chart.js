@@ -43,7 +43,7 @@ function Chart({ username }) {
   }, [langData]);
 
   return (
-    <div className="bg-gray-100">
+    <div className="p-8">
       {langData && Object.keys(chartData).length > 0 && (
         <Doughnut data={chartData} />
       )}
