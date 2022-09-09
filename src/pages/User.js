@@ -32,18 +32,20 @@ function User() {
   }, [username]);
 
   return (
-    <body className="bg-gray-900 h-screen">
+    <body className="bg-gray-900 min-h-full">
       <Navbar tab={tab} setTab={setTab} />
       {tab === "user" ? (
-        <>
-          <UserInfo username={username} />
-          <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols1 sm:grid-cols-1">
-            <article className="prose lg:prose-xl m-16">
-              <ReactMarkdown skipHtml>{readme}</ReactMarkdown>
-            </article>
+        <div className="grid xl:grid-cols-2 lg:grid-cols-2 md:grid-cols2 sm:grid-cols-1">
+          <div>
+            <UserInfo username={username} />
             <Chart username={username} />
           </div>
-        </>
+          <div className="w-full bg-slate-100 p-8 my-8 rounded-xl">
+            <article className="prose lg:prose-xl ">
+              <ReactMarkdown skipHtml>{readme}</ReactMarkdown>
+            </article>
+          </div>
+        </div>
       ) : (
         <Repos username={username} />
       )}
