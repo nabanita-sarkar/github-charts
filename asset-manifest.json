@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/github-charts/static/css/main.c5a3f004.css",
-    "main.js": "/github-charts/static/js/main.a31508bb.js",
+    "main.css": "/github-charts/static/css/main.340e2a9b.css",
+    "main.js": "/github-charts/static/js/main.08866d08.js",
     "static/js/787.9c2707e7.chunk.js": "/github-charts/static/js/787.9c2707e7.chunk.js",
     "index.html": "/github-charts/index.html",
-    "main.c5a3f004.css.map": "/github-charts/static/css/main.c5a3f004.css.map",
-    "main.a31508bb.js.map": "/github-charts/static/js/main.a31508bb.js.map",
+    "main.340e2a9b.css.map": "/github-charts/static/css/main.340e2a9b.css.map",
+    "main.08866d08.js.map": "/github-charts/static/js/main.08866d08.js.map",
     "787.9c2707e7.chunk.js.map": "/github-charts/static/js/787.9c2707e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5a3f004.css",
-    "static/js/main.a31508bb.js"
+    "static/css/main.340e2a9b.css",
+    "static/js/main.08866d08.js"
   ]
 }
