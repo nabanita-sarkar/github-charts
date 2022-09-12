@@ -12,7 +12,7 @@ function App() {
     });
   };
   return (
-    <div className="h-full flex justify-center items-center bg-gray-900 overflow-hidden lg:p-24 md:p-10 p-5">
+    <div className="h-screen flex justify-center items-center bg-gray-900 overflow-hidden lg:p-24 md:p-10 p-5">
       <div className="p-10 mb-20">
         <h1 className="text-center text-4xl sm:text-4xl md:text-5xl font-extrabold text-gray-200 pb-10">
           Enter Your Github Username
